@@ -433,6 +433,20 @@ html.locked,html.locked body{height:100%;overflow:hidden!important}
 .content{visibility:hidden}
 body.ready .content{visibility:visible}
 
+
+/* PHOTOGRAPHIC INTRO + VISIBLE CURSOR */
+#intro{
+  background:#080706 url("https://images.unsplash.com/photo-1702865272115-5afdbae975af?auto=format&fit=crop&w=2400&q=88") center 48%/cover no-repeat!important;
+}
+#intro3d{display:none!important}
+#intro::after{
+  background:linear-gradient(90deg,rgba(4,4,4,.72) 0%,rgba(4,4,4,.30) 55%,rgba(4,4,4,.12) 100%),
+             linear-gradient(0deg,rgba(3,3,3,.76),transparent 48%,rgba(3,3,3,.28))!important;
+}
+#pcur{z-index:100001!important}
+html.pcur-on,html.pcur-on *{cursor:none!important}
+#intro-continue{position:relative;z-index:100000}
+
 </style>
 </head>
 <body>

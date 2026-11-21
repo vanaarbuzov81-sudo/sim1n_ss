@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S1men Sss — барбер | Эдгар кат и хайфэшн</title>
-<meta name="description" content="S1men Sss — барбер с 3-летним опытом. Мужские стрижки, эдгар кат, фейд, индивидуальный образ под форму лица. Обсуждаем прически вместе с клиентом. Запись в Telegram.">
+<title>SIM1NSSS — барбер | Эдгар кат и хайфэшн</title>
+<meta name="description" content="SIM1NSSS — барбер с 3-летним опытом. Мужские стрижки, эдгар кат, фейд, индивидуальный образ под форму лица. Обсуждаем прически вместе с клиентом. Запись в Telegram.">
 <meta name="theme-color" content="#0a0a0f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -494,28 +494,64 @@ html.intro-open,html.intro-open body{overflow:hidden}
 @media(max-width:700px){.intro-btn{width:100%;justify-content:center;text-align:center}.intro-title{font-size:clamp(56px,20vw,110px)}}
 @media(prefers-reduced-motion:reduce){#intro #introImg{animation:none;transform:none}.intro-top,.intro-kicker,.intro-title span,.intro-sub,.intro-btn{animation:none;opacity:1}}
 
+
+/* SIM1NSSS minimal BARBER intro */
+#intro{align-items:center;justify-content:center;background:#08090d!important}
+#intro #introImg,.intro-shade{display:none!important}
+#intro .intro-frame{border-color:rgba(255,255,255,.16);border-radius:8px}
+#intro .intro-body{max-width:1100px;padding:0 clamp(28px,7vw,100px);text-align:center}
+#intro .intro-top{opacity:1;animation:none}
+#intro .intro-kicker{opacity:1;animation:none;color:#d7a66b}
+#intro .intro-title{display:block;margin:24px 0 16px;font-size:clamp(76px,17vw,210px);letter-spacing:-.075em;color:#f5f1e9;opacity:1;animation:none}
+#intro .intro-sub{opacity:1;animation:none;color:#b6b2aa;font-size:clamp(15px,2vw,20px);margin-bottom:30px}
+#intro .intro-btn{opacity:1;animation:none;min-width:190px}
+.intro-glow{position:absolute;width:42vw;height:42vw;border-radius:50%;filter:blur(100px);opacity:.16;pointer-events:none}
+.intro-glow-a{background:#bd8754;left:-20vw;bottom:-24vw}.intro-glow-b{background:#52617b;right:-20vw;top:-24vw}
+@media(max-width:600px){#intro .intro-title{font-size:clamp(64px,20vw,120px)}#intro .intro-top{left:26px;top:26px}}
+.booking-gate{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,70px);align-items:center;margin:34px 0 28px;padding:clamp(24px,4vw,48px);border:1px solid var(--line);border-radius:26px;background:linear-gradient(135deg,rgba(255,255,255,.055),rgba(255,255,255,.015));overflow:hidden}
+.tool-orbit{position:relative;min-height:350px;display:grid;place-items:center}
+.tool-orbit:before,.tool-orbit:after{content:"";position:absolute;border:1px solid rgba(215,166,107,.24);border-radius:50%;width:220px;height:220px;animation:toolSpin 22s linear infinite}
+.tool-orbit:after{width:310px;height:310px;border-color:rgba(255,255,255,.12);animation-direction:reverse;animation-duration:32s}
+@keyframes toolSpin{to{transform:rotate(360deg)}}
+.tool-center{z-index:2;text-align:center;font-family:var(--head);font-size:clamp(22px,3vw,34px);font-weight:900;letter-spacing:-.05em}
+.tool-center small{display:block;font:600 10px var(--body);letter-spacing:.25em;color:var(--mute);margin-top:8px}
+.tool-icon{position:absolute;z-index:3;width:58px;height:58px;display:grid;place-items:center;border:1px solid rgba(215,166,107,.42);border-radius:18px;background:#17171b;color:#d7a66b;box-shadow:0 12px 34px #0008;animation:toolFloat 4s ease-in-out infinite}
+.tool-icon svg{width:29px;height:29px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.tool-icon:nth-of-type(1){top:4%;left:calc(50% - 29px)}.tool-icon:nth-of-type(2){right:7%;top:36%;animation-delay:-1s}
+.tool-icon:nth-of-type(3){bottom:4%;left:calc(50% - 29px);animation-delay:-2s}.tool-icon:nth-of-type(4){left:7%;top:36%;animation-delay:-3s}
+.tool-icon:nth-of-type(5){top:18%;right:18%;animation-delay:-1.5s}
+@keyframes toolFloat{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-9px) rotate(4deg)}}
+.auth-panel h3{font-family:var(--head);font-size:clamp(22px,3vw,32px);line-height:1.2;margin-bottom:12px}
+.auth-panel p{color:var(--mute);margin-bottom:22px}
+.google-btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:16px 22px;border-radius:14px;border:1px solid rgba(255,255,255,.2);background:#f5f4f0;color:#151515;font:700 15px var(--body);cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s}
+.google-btn:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.28);background:#fff}
+.google-btn svg{width:20px;height:20px}.auth-note{font-size:12px;color:var(--mute);margin-top:12px;min-height:20px}
+.auth-user{display:none;align-items:center;gap:12px;padding:14px;border-radius:14px;background:rgba(215,166,107,.1);margin-bottom:18px}
+.auth-user img{width:38px;height:38px;border-radius:50%;object-fit:cover}.auth-user button{margin-left:auto;background:none;color:var(--mute);border:0;cursor:pointer;text-decoration:underline}
+.booking-form{display:none}body.google-authenticated .booking-form{display:grid}
+body.google-authenticated .auth-user{display:flex}body.google-authenticated .google-btn{display:none}body.google-authenticated .auth-panel .auth-help{display:none}
+@media(max-width:760px){.booking-gate{grid-template-columns:1fr}.tool-orbit{min-height:280px}.tool-orbit:after{width:250px;height:250px}.tool-orbit:before{width:180px;height:180px}.auth-panel{text-align:center}}
+
 </style>
 </head>
 <body>
-<div id="intro" role="dialog" aria-modal="true" aria-label="Добро пожаловать">
-  <img id="introImg" alt="" decoding="async">
-  <div class="intro-shade"></div>
+<div id="intro" role="dialog" aria-modal="true" aria-label="Барбер">
+  <div class="intro-glow intro-glow-a"></div><div class="intro-glow intro-glow-b"></div>
   <div class="intro-frame"></div>
-  <div class="intro-top"><span class="mini"></span>S1MEN SSS</div>
+  <div class="intro-top"><span class="mini"></span>SIM1NSSS</div>
   <div class="intro-body">
-    <p class="intro-kicker">Барбер · эдгар кат · хайфэшн</p>
-    <h1 class="intro-title"><span>S1MEN</span><span>SSS</span></h1>
-    <p class="intro-sub">Образ, который строится под тебя. Обсуждаем прически вместе с клиентом.</p>
+    <p class="intro-kicker">SIM1NSSS · BARBER STUDIO</p>
+    <h1 class="intro-title">Барбер</h1>
+    <p class="intro-sub">Твой стиль. Твоя форма. Твой барбер.</p>
     <button type="button" id="introGo" class="btn intro-btn">Продолжить <span aria-hidden="true">→</span></button>
   </div>
 </div>
-
 
 <div class="bg" aria-hidden="true">
   <div class="glow g1" data-speed="-.12"></div>
   <div class="glow g2" data-speed="-.2"></div>
   <div class="glow g3" data-speed="-.25"></div>
-  <div class="word" data-speed="-.3">S1MEN SSS</div>
+  <div class="word" data-speed="-.3">SIM1NSSS</div>
 </div>
 <canvas id="gl" aria-hidden="true"></canvas>
 
@@ -535,7 +571,7 @@ html.intro-open,html.intro-open body{overflow:hidden}
 <div id="ptl" aria-hidden="true"><div class="bp2" style="width:56px"></div><b id="ptlt"></b></div>
 <div class="content">
 <nav id="nav">
-  <a href="#hero" class="logo"><span class="mini"></span>S1MEN SSS</a>
+  <a href="#hero" class="logo"><span class="mini"></span>SIM1NSSS</a>
   <div class="nav-r">
     <a class="btn" href="https://t.me/s1men_sss" target="_blank" rel="noopener">Записаться</a>
     <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
@@ -574,10 +610,10 @@ html.intro-open,html.intro-open body{overflow:hidden}
 
 <div class="marquee" aria-hidden="true">
   <div>
-    <span>EDGAR CUT</span><span>FADE</span><span>BEARD</span><span>TEXTURE</span><span>STYLE</span><span>SSS</span>
-    <span>EDGAR CUT</span><span>FADE</span><span>BEARD</span><span>TEXTURE</span><span>STYLE</span><span>SSS</span>
-    <span>EDGAR CUT</span><span>FADE</span><span>BEARD</span><span>TEXTURE</span><span>STYLE</span><span>SSS</span>
-    <span>EDGAR CUT</span><span>FADE</span><span>BEARD</span><span>TEXTURE</span><span>STYLE</span><span>SSS</span>
+    <span>EDGAR CUT</span><span>FADE</span><span>CLAY</span><span>TEXTURE</span><span>STYLE</span><span>SSS</span>
+    <span>EDGAR CUT</span><span>FADE</span><span>CLAY</span><span>TEXTURE</span><span>STYLE</span><span>SSS</span>
+    <span>EDGAR CUT</span><span>FADE</span><span>CLAY</span><span>TEXTURE</span><span>STYLE</span><span>SSS</span>
+    <span>EDGAR CUT</span><span>FADE</span><span>CLAY</span><span>TEXTURE</span><span>STYLE</span><span>SSS</span>
   </div>
 </div>
 
@@ -604,14 +640,14 @@ html.intro-open,html.intro-open body{overflow:hidden}
         <div class="back"></div>
         <div class="paper"><b>Привет!</b></div>
         <div class="front"></div>
-        <div class="addr">Кому: <em>тебе</em><br>От: S1men Sss<br>Куда: в кресло №1</div>
+        <div class="addr">Кому: <em>тебе</em><br>От: SIM1NSSS<br>Куда: в кресло №1</div>
         <div class="flap"></div>
         <div class="seal">S</div>
         <div class="stampbox"><div class="stamp" id="stamp"><div class="ph"><img data-photo alt="Мастер S1men"></div><div class="val">3 ГОДА</div></div></div>
         <svg class="postmark" viewBox="0 0 120 120" fill="none" stroke="#2b2b3a" aria-hidden="true">
           <circle cx="60" cy="60" r="46" stroke-width="2"/><circle cx="60" cy="60" r="32" stroke-width="1"/>
           <path id="pm" d="M60 60 m-39 0 a39 39 0 1 1 78 0 a39 39 0 1 1 -78 0" stroke="none"/>
-          <text font-size="10" font-family="Unbounded,sans-serif" fill="#2b2b3a" stroke="none" letter-spacing="2"><textPath href="#pm">S1MEN SSS · BARBER · 2026 ·</textPath></text>
+          <text font-size="10" font-family="Unbounded,sans-serif" fill="#2b2b3a" stroke="none" letter-spacing="2"><textPath href="#pm">SIM1NSSS · BARBER · 2026 ·</textPath></text>
           <path d="M-6 40q10-8 20 0t20 0M-6 52q10-8 20 0t20 0M-6 64q10-8 20 0t20 0" stroke-width="2" transform="translate(-20 0)"/>
         </svg>
       </button>
@@ -628,7 +664,7 @@ html.intro-open,html.intro-open body{overflow:hidden}
       <p class="sub rv">Наглядно: так выглядят стрижки и место, где всё происходит.</p>
     </div>
     <div class="gal" id="gal">
-      <figure class="tile t1" data-has="1" style="--i:0"><div class="inner"><img data-photo alt="Мастер S1men Sss"><figcaption>S1men Sss<small>Мастер · 3 года опыта</small></figcaption></div></figure>
+      <figure class="tile t1" data-has="1" style="--i:0"><div class="inner"><img data-photo alt="Мастер SIM1NSSS"><figcaption>SIM1NSSS<small>Мастер · 3 года опыта</small></figcaption></div></figure>
       <figure class="tile t2" data-has="1" style="--i:1"><div class="inner"><img data-edgar alt="Стрижка эдгар кат"><figcaption>Эдгар кат<small>Рваная текстура, ровная чёлка, фейд</small></figcaption></div></figure>
       <figure class="tile t3 cta" style="--i:2"><div class="inner"><div class="ph"><b>Ты?</b><span>Следующая стрижка в этой галерее может быть твоей</span><a class="btn" href="#booking">Записаться онлайн</a></div></div></figure>
     </div>
@@ -641,8 +677,7 @@ html.intro-open,html.intro-open body{overflow:hidden}
     <div class="price">
       <div class="row rv"><h3>Стрижка</h3><p>Фейд, кроп, эдгар кат. Мытьё и укладка.</p><div class="sum">2000 ₽</div></div>
       <div class="row rv"><h3>Стрижка с объёмом</h3><p>Форма под лицо, работа с текстурой и движением.</p><div class="sum">2800 ₽</div></div>
-      <div class="row rv"><h3>Стрижка + борода</h3><p>Полный образ: волосы и борода в одной форме.</p><div class="sum">3500 ₽</div></div>
-      <div class="row rv"><h3>Камуфляж седины</h3><p>Аккуратное тонирование, естественный результат.</p><div class="sum">1500 ₽</div></div>
+<div class="row rv"><h3>Камуфляж седины</h3><p>Аккуратное тонирование, естественный результат.</p><div class="sum">1500 ₽</div></div>
     </div>
     <a class="btn rv" href="#booking">Записаться онлайн</a>
   </div>
@@ -665,7 +700,7 @@ html.intro-open,html.intro-open body{overflow:hidden}
     <div class="track" id="track">
       <figure class="card"><div class="stars">★★★★★</div><blockquote>«Наконец-то мастер, который объяснил, почему мне подходит именно эта форма. Стрижка держится три недели».</blockquote><cite><b>Артём</b>стрижка</cite></figure>
       <figure class="card"><div class="stars">★★★★★</div><blockquote>«Отращивал волосы год, боялся доверять. S1men собрал форму так, что укладка занимает пять минут».</blockquote><cite><b>Никита</b>стрижка с объёмом</cite></figure>
-      <figure class="card"><div class="stars">★★★★★</div><blockquote>«Стрижка + борода — идеально вписано в мои скулы. Видно, что человек думает, а не просто берёт машинку».</blockquote><cite><b>Михаил</b>стрижка + борода</cite></figure>
+      <figure class="card"><div class="stars">★★★★★</div><blockquote>«Очень точная работа с формой и переходом. Всё аккуратно, а укладка держится весь день».</blockquote><cite><b>Михаил</b>стрижка</cite></figure>
       <figure class="card"><div class="stars">★★★★★</div><blockquote>«Закрасили седину так, что никто не заметил. Выгляжу моложе, и всё естественно».</blockquote><cite><b>Андрей</b>камуфляж седины</cite></figure>
     </div>
   </div>
@@ -689,8 +724,23 @@ html.intro-open,html.intro-open body{overflow:hidden}
 <section class="sec" id="booking">
   <div class="wrap shiftR">
     <h2 class="rv">Оставь заявку</h2>
-    <p class="sub rv">Заполни форму — и мы сразу продолжим в Telegram.</p>
-    <form id="form" class="rv">
+    <p class="sub rv">Сначала войди через Google, затем выбери услугу и удобное время.</p>
+    <div class="booking-gate">
+<div class="tool-orbit" aria-label="Инструменты барбера">
+<div class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4z"/><path d="M7 7V4h10v3M8 11h8M8 15h8"/></svg></div>
+<div class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8h14v10H5z"/><path d="M8 5v3m3-3v3m3-3v3m3-3v3M8 18v2m3-2v2m3-2v2m3-2v2"/></svg></div>
+<div class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="m8 8 12 12M8 16 20 4"/></svg></div>
+<div class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 11h16M4 15h16M4 19h16M7 7v12m5-12v12m5-12v12"/></svg></div>
+<div class="tool-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="5"/><path d="M7 7h10M7 12h10M7 17h10"/></svg></div>
+<div class="tool-center">SIM1NSSS<small>BARBER STUDIO</small></div>
+</div>
+<div class="auth-panel">
+<h3>Запись на стрижку</h3><p class="auth-help">Войди через Google, чтобы перейти к выбору услуги, даты и времени.</p>
+<div class="auth-user" id="auth-user"><img id="auth-avatar" alt=""><span id="auth-name"></span><button type="button" id="auth-logout">Выйти</button></div>
+<button class="google-btn" id="google-signin" type="button"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.7c3.9-3.6 6-8.9 6-15z"/><path fill="#34A853" d="M24 44c5.5 0 10.1-1.8 13.5-4.9l-6.7-5.1c-1.8 1.2-4 2-6.8 2-5.2 0-9.6-3.5-11.2-8.2H5.9v5.3A20 20 0 0 0 24 44z"/><path fill="#FBBC05" d="M12.8 27.8a12 12 0 0 1 0-7.6v-5.3H5.9a20 20 0 0 0 0 18.2z"/><path fill="#EA4335" d="M24 11.9c3 0 5.7 1 7.8 3.1l5.8-5.8A19.4 19.4 0 0 0 24 4 20 20 0 0 0 5.9 14.9l6.9 5.3c1.6-4.7 6-8.3 11.2-8.3z"/></svg>Продолжить с Google</button>
+<div class="auth-note" id="auth-note" role="status">Безопасный вход через Google.</div>
+</div></div>
+<form id="form" class="rv booking-form">
       <label>Имя<input name="name" required autocomplete="name"></label>
       <label>Телефон<input name="phone" type="tel" required autocomplete="tel"></label>
       <label class="full">Услуга
@@ -698,7 +748,6 @@ html.intro-open,html.intro-open body{overflow:hidden}
           <option value="">Выбери услугу</option>
           <option>Стрижка — 2000 ₽</option>
           <option>Стрижка с объёмом — 2800 ₽</option>
-          <option>Стрижка + борода — 3500 ₽</option>
           <option>Камуфляж седины — 1500 ₽</option>
         </select>
       </label>
@@ -732,8 +781,8 @@ html.intro-open,html.intro-open body{overflow:hidden}
 
 <footer>
   <div class="wrap">
-    <a href="#hero" class="logo"><span class="mini"></span>S1MEN SSS</a>
-    <span>© 2026 S1men Sss. Все права защищены.</span>
+    <a href="#hero" class="logo"><span class="mini"></span>SIM1NSSS</a>
+    <span>© 2026 SIM1NSSS. Все права защищены.</span>
     <a href="https://t.me/s1men_sss" target="_blank" rel="noopener">@s1men_sss</a>
   </div>
 </footer>
@@ -744,7 +793,7 @@ html.intro-open,html.intro-open body{overflow:hidden}
   <div class="sheet" id="sheet">
     <button class="close" id="lclose" aria-label="Закрыть">×</button>
     <div class="top">
-      <div class="polaroid"><img data-photo alt="S1men Sss"><span>S1men, 3 года за креслом</span></div>
+      <div class="polaroid"><img data-photo alt="SIM1NSSS"><span>S1men, 3 года за креслом</span></div>
       <div>
         <h3>Привет!<br>Это S1men.</h3>
         <div class="date">Письмо для тебя</div>
@@ -1235,7 +1284,7 @@ var INTRO_FALLBACK="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEB
   /* ================= ПЕРЕХОДЫ КАК В ПОВЕРПОИНТЕ ================= */
   var pt=document.getElementById('pt'), ptl=document.getElementById('ptl'), ptlt=document.getElementById('ptlt');
   var ptBusy=false, ptKind=0;
-  var NAMES={hero:'S1men Sss',about:'О мастере','letter-sec':'Письмо',gallery:'Работы',services:'Услуги',reviews:'Отзывы',process:'Процесс',promo:'Подарок',faq:'Вопросы',booking:'Запись',contacts:'Контакты'};
+  var NAMES={hero:'SIM1NSSS',about:'О мастере','letter-sec':'Письмо',gallery:'Работы',services:'Услуги',reviews:'Отзывы',process:'Процесс',promo:'Подарок',faq:'Вопросы',booking:'Запись',contacts:'Контакты'};
   var PANEL='linear-gradient(135deg,#ff2a45 0%,#8f1230 28%,#1a1048 62%,#2f6bff 100%)';
   function pageGo(label,cb){
     if(ptBusy) return; ptBusy=true;
@@ -1280,7 +1329,7 @@ var INTRO_FALLBACK="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEB
     var id=a.getAttribute('href').slice(1); if(!id) return;
     var target=document.getElementById(id); if(!target) return;
     e.preventDefault();
-    var label=NAMES[id]||a.textContent.replace(/^\s*\d+/,'').trim()||'S1men Sss';
+    var label=NAMES[id]||a.textContent.replace(/^\s*\d+/,'').trim()||'SIM1NSSS';
     pageGo(label,function(){
       if(body.classList.contains('menu-open')) setMenu(false);
       var y=target.getBoundingClientRect().top+scrollY;
@@ -1289,21 +1338,18 @@ var INTRO_FALLBACK="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEB
     });
   });
 
-  /* ================= ИНТРО ================= */
+  /* ================= ИНТРО BARBER ================= */
   (function(){
-    var intro=document.getElementById('intro'), go=document.getElementById('introGo'), img=document.getElementById('introImg');
+    var intro=document.getElementById('intro'), go=document.getElementById('introGo');
     if(!intro) return;
     root.classList.add('intro-open');
-    /* своё фото: положи файл intro.jpg рядом с index.html — оно подхватится само */
-    img.onerror=function(){img.onerror=null;img.src=INTRO_FALLBACK};
-    img.src='intro.jpg';
     function close(){
       if(!intro.parentNode) return;
       go.disabled=true;
-      pageGo('S1MEN SSS',function(){intro.remove();root.classList.remove('intro-open');window.scrollTo(0,0)});
+      pageGo('Барбер',function(){intro.remove();root.classList.remove('intro-open');window.scrollTo(0,0)});
     }
     go.addEventListener('click',close);
-    setTimeout(function(){try{go.focus({preventScroll:true})}catch(e){}},1500);
+    setTimeout(function(){try{go.focus({preventScroll:true})}catch(e){}},500);
   })();
 
   /* ================= НАДЁЖНОЕ ПОЯВЛЕНИЕ БЛОКОВ (если IntersectionObserver подвёл) ================= */
@@ -1327,10 +1373,11 @@ var INTRO_FALLBACK="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEB
   document.addEventListener('pointermove',function(e){root.classList.toggle('pcur-hide',!!(e.target.closest&&e.target.closest('[data-promo-card]')))},{passive:true});
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    var d=new FormData(form);
-    var text='Привет! Хочу записаться.\nИмя: '+d.get('name')+'\nТелефон: '+d.get('phone')+'\nУслуга: '+d.get('service')+'\nДата: '+d.get('date')+'\nВремя: '+d.get('time')+(d.get('promo')?'\nПромокод: '+d.get('promo'):'');
+    if(!window.SIM1NSSS_AUTH_USER){status.textContent='Сначала войди через Google.';return;}
+    var d=new FormData(form), user=window.SIM1NSSS_AUTH_USER;
+    var text='Привет! Хочу записаться на стрижку.\nGoogle: '+(user.email||'')+'\nИмя: '+d.get('name')+'\nТелефон: '+d.get('phone')+'\nУслуга: '+d.get('service')+'\nДата: '+d.get('date')+'\nВремя: '+d.get('time')+(d.get('promo')?'\nПромокод: '+d.get('promo'):'');
     if(navigator.clipboard) navigator.clipboard.writeText(text).catch(function(){});
-    status.textContent='Заявка скопирована. Открываю Telegram — вставь её в чат и отправь.';
+    status.textContent='Заявка подготовлена. Открываю Telegram — вставь её в чат и отправь.';
     window.open('https://t.me/s1men_sss','_blank','noopener');
   });
 })();
@@ -1358,7 +1405,7 @@ Error generating stack: `+n.message+`
 .lsk${dt}-btn{outline:none}
 .lsk${dt}-btn:focus-visible{box-shadow:0 0 0 ${O(2.5)} ${S},0 0 0 ${O(4.5)} ${xe(Et(P),.85)}}
 .lsk${dt}-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
-`}),(0,H.jsxs)(H.Fragment,{children:[(0,H.jsxs)("div",{ref:ct,role:"group","aria-label":[e,t,"gift card"].filter(Boolean).join(" "),style:{position:"absolute",left:oi,top:Fn,width:wf,height:kf,borderRadius:O(Gk),background:m,color:p,userSelect:"none",WebkitUserSelect:"none",cursor:"none",touchAction:"pan-y",boxShadow:`inset 0 ${O(1)} 0 ${xe(si,.32)}, inset 0 0 0 ${O(1)} ${xe(si,.1)}, 0 ${O(2)} ${O(3)} ${xe(Mf,.45)}, 0 ${O(13)} ${O(20)} ${O(-6)} ${xe(Mf,.6)}, 0 ${O(34)} ${O(56)} ${O(-12)} ${xe(Mf,.36)}`},children:[(0,H.jsxs)("div",{style:{position:"absolute",left:O(35),top:O(32),right:O(170),lineHeight:1.15,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"},children:[(0,H.jsx)("div",{style:{fontSize:Pr(16.5),fontWeight:650,letterSpacing:"-0.005em"},children:t}),(0,H.jsx)("div",{style:{fontSize:Pr(14),fontWeight:400,color:ym,marginTop:O(1.5)},children:a})]}),(0,H.jsx)(ao,{"aria-hidden":"true",color:p,strokeWidth:1.4,style:{position:"absolute",right:O(37),top:O(27),width:O(76),height:O(76)}}),(0,H.jsx)("div",{style:{position:"absolute",left:O(26),top:O(78),fontFamily:B,fontStretch:"condensed",fontWeight:900,fontSize:O(140),lineHeight:1,letterSpacing:"-0.032em",whiteSpace:"nowrap"},children:e}),(0,H.jsx)("div",{style:{position:"absolute",left:O(35),right:O(35),top:O(238),fontSize:Pr(14),lineHeight:1.3,color:ym,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"},children:r}),(0,H.jsxs)("div",{ref:oo,className:`lsk${dt}-panel`,role:jt?"group":"button",tabIndex:jt?-1:0,"aria-label":jt?"Gift card code":f,onKeyDown:PI,onClick:x=>{var W,_;x.detail===0&&!jt&&((_=(W=St.current).doReveal)==null||_.call(W,!0))},style:{position:"absolute",left:O(Pn),top:O(ti),width:O(xf),height:O(gf),borderRadius:O(jk),background:v,touchAction:"none",overflow:"hidden"},children:[(0,H.jsx)("div",{"aria-hidden":!jt,style:{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",paddingTop:O(4),fontFamily:Ee,fontWeight:600,fontSize:Pr(31,13),letterSpacing:"0.07em",textIndent:"0.07em",color:P,whiteSpace:"nowrap"},children:o}),(0,H.jsx)("canvas",{ref:Sr,"aria-hidden":"true",style:{position:"absolute",inset:0,width:"100%",height:"100%",display:"block"}})]})]}),(0,H.jsx)("canvas",{ref:If,"aria-hidden":"true",style:{position:"absolute",left:0,top:0,width:wr,height:kr,pointerEvents:"none"}}),(0,H.jsx)("div",{ref:fm,"aria-hidden":"true",style:{position:"absolute",left:0,top:0,width:O(om),height:O(om),pointerEvents:"none",opacity:0,visibility:"hidden",willChange:"transform, opacity",filter:`drop-shadow(${O(1.5)} ${O(3)} ${O(2.5)} ${xe(ce(Tr,Ct,.75),.42)})`},children:(0,H.jsxs)("svg",{viewBox:"0 0 52 52",width:"100%",height:"100%",style:{display:"block"},children:[(0,H.jsxs)("defs",{children:[(0,H.jsxs)("radialGradient",{id:`lsk${dt}f`,cx:"0.36",cy:"0.3",r:"0.8",children:[(0,H.jsx)("stop",{offset:"0",stopColor:xm}),(0,H.jsx)("stop",{offset:"0.55",stopColor:TI}),(0,H.jsx)("stop",{offset:"1",stopColor:MI})]}),(0,H.jsxs)("linearGradient",{id:`lsk${dt}r`,x1:"0.2",y1:"0",x2:"0.8",y2:"1",children:[(0,H.jsx)("stop",{offset:"0",stopColor:AI}),(0,H.jsx)("stop",{offset:"1",stopColor:Tf})]})]}),(0,H.jsx)("circle",{cx:"26",cy:"26",r:"25.5",fill:Tf}),(0,H.jsx)("circle",{cx:"26",cy:"26",r:"24",fill:`url(#lsk${dt}r)`}),(0,H.jsx)("circle",{cx:"26",cy:"26",r:"22.8",fill:`url(#lsk${dt}f)`}),(0,H.jsx)("circle",{cx:"26",cy:"26",r:"22.8",fill:"none",stroke:Tf,strokeOpacity:"0.5",strokeWidth:"0.8"}),(0,H.jsx)("path",{d:"M22.6 22.4 L27.4 18.8 L27.4 33.4",fill:"none",stroke:xm,strokeOpacity:"0.7",strokeWidth:"2.6",strokeLinecap:"round",strokeLinejoin:"round",transform:"translate(0.6 0.7)"}),(0,H.jsx)("path",{d:"M22.6 22.4 L27.4 18.8 L27.4 33.4",fill:"none",stroke:DI,strokeWidth:"2.6",strokeLinecap:"round",strokeLinejoin:"round"})]})}),(0,H.jsx)("div",{ref:dm,"aria-hidden":jt,style:{position:"absolute",left:16,right:16,top:Fn+$k*Ne,transform:"translateY(-50%)",textAlign:"center",fontSize:Pr(19),lineHeight:1.3,color:Lm,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis",pointerEvents:"none"},children:s}),(0,H.jsxs)("div",{ref:cm,style:{position:"absolute",left:oi+wf/2,top:Fn+Kk*Ne,transform:"translate(-50%, -50%) translateY(5px)",display:"flex",alignItems:"center",gap:O(20),whiteSpace:"nowrap",opacity:0,visibility:"hidden"},children:[(0,H.jsx)("span",{"aria-hidden":"true",style:{fontSize:Pr(18),color:Lm},children:i}),(0,H.jsxs)("button",{ref:Cf,type:"button",className:`lsk${dt}-btn`,tabIndex:jt?0:-1,"aria-hidden":!jt,onClick:kI,style:{position:"relative",height:Math.max(32,48*Ne),padding:`0 ${O(22)}`,minWidth:O(130),border:0,borderRadius:999,background:P,color:"#ffffff",font:"inherit",fontSize:Pr(16),fontWeight:600,cursor:"pointer",overflow:"hidden"},children:[(0,H.jsx)("span",{ref:pm,"aria-hidden":Rn,style:{display:"block"},children:l}),(0,H.jsxs)("span",{ref:mm,"aria-hidden":!Rn,style:{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",gap:O(7),opacity:0,color:xe(ce(Et(w),Dn,.8))},children:[(0,H.jsx)("svg",{"aria-hidden":"true",viewBox:"0 0 16 16",width:O(14),height:O(14),style:{flex:"none"},children:(0,H.jsx)("path",{d:"M2.5 8.6 L6.2 12.2 L13.5 4.4",fill:"none",stroke:"currentColor",strokeWidth:"2.2",strokeLinecap:"round",strokeLinejoin:"round"})}),u]})]})]}),(0,H.jsxs)("div",{className:`lsk${dt}-sr`,"aria-live":"polite",children:[jt?`${i} ${o}`:"",Rn?` ${u}.`:""]})]})]})}var $=b(ta()),yf="S1MEN-FREE-2",im=2,sP=[{icon:Js,title:"\u0420\u0430\u0437\u0433\u043E\u0432\u043E\u0440",text:"\u041E\u0431\u0441\u0443\u0436\u0434\u0430\u0435\u043C \u043F\u0440\u0438\u0447\u0435\u0441\u043A\u0443 \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u043C: \u0440\u0435\u0444\u0435\u0440\u0435\u043D\u0441\u044B, \u043E\u0431\u0440\u0430\u0437 \u0436\u0438\u0437\u043D\u0438, \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043D\u0430 \u0443\u043A\u043B\u0430\u0434\u043A\u0443."},{icon:ei,title:"\u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430",text:"\u041C\u043E\u044E \u0438 \u043F\u043E\u0434\u0433\u043E\u0442\u0430\u0432\u043B\u0438\u0432\u0430\u044E \u0432\u043E\u043B\u043E\u0441\u044B, \u0441\u043C\u043E\u0442\u0440\u044E \u043D\u0430 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0443 \u0438 \u043F\u0440\u043E\u043F\u043E\u0440\u0446\u0438\u0438 \u043B\u0438\u0446\u0430."},{icon:ao,title:"\u0421\u0442\u0440\u0438\u0436\u043A\u0430",text:"\u0424\u043E\u0440\u043C\u0430 \u043F\u043E\u0434 \u043B\u0438\u0446\u043E: \u0444\u0435\u0439\u0434, \u044D\u0434\u0433\u0430\u0440 \u043A\u0430\u0442, \u043A\u0440\u043E\u043F, \u043E\u0431\u044A\u0451\u043C. \u0427\u0451\u0442\u043A\u043E \u0438 \u0431\u0435\u0437 \u0441\u043F\u0435\u0448\u043A\u0438."},{icon:Ys,title:"\u0423\u043A\u043B\u0430\u0434\u043A\u0430",text:"\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u044E, \u043A\u0430\u043A \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C \u0443\u043A\u043B\u0430\u0434\u043A\u0443 \u0434\u043E\u043C\u0430 \u0437\u0430 \u0442\u0440\u0438 \u043C\u0438\u043D\u0443\u0442\u044B."}];function iP(){let e=Ks(),t=Ba.useRef(null),{scrollYProgress:a}=tm({target:t,offset:["start 75%","end 55%"]}),r=am(a,{stiffness:120,damping:28,mass:.4});return(0,$.jsxs)("div",{ref:t,className:"mx-steps",children:[(0,$.jsx)("div",{className:"mx-line","aria-hidden":"true",children:(0,$.jsx)(Fa.i,{style:{scaleY:e?1:r}})}),sP.map((o,n)=>{let s=o.icon;return(0,$.jsxs)(Fa.article,{className:"mx-step",initial:e?!1:{opacity:0,x:n%2?48:-48,filter:"blur(8px)"},whileInView:{opacity:1,x:0,filter:"blur(0px)"},viewport:{once:!0,margin:"-12% 0px"},transition:{type:"spring",stiffness:90,damping:16,delay:.05},whileHover:e?void 0:{y:-6,scale:1.015},children:[(0,$.jsx)(Fa.span,{className:"mx-badge",initial:e?!1:{scale:0,rotate:-90},whileInView:{scale:1,rotate:0},viewport:{once:!0,margin:"-12% 0px"},transition:{type:"spring",stiffness:260,damping:14,delay:.2},children:(0,$.jsx)(s,{size:22,strokeWidth:1.8})}),(0,$.jsxs)("div",{children:[(0,$.jsxs)("small",{children:["\u0428\u0430\u0433 ",String(n+1).padStart(2,"0")]}),(0,$.jsx)("h3",{children:o.title}),(0,$.jsx)("p",{children:o.text})]})]},o.title)})]})}var lP=[{q:"\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u0438\u0442\u0441\u044F \u0441\u0442\u0440\u0438\u0436\u043A\u0430?",a:"\u041E\u0431\u044B\u0447\u043D\u043E \u043E\u0442 60 \u0434\u043E 90 \u043C\u0438\u043D\u0443\u0442 \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u0440\u0430\u0437\u0433\u043E\u0432\u043E\u0440\u043E\u043C, \u043C\u044B\u0442\u044C\u0451\u043C \u0438 \u0443\u043A\u043B\u0430\u0434\u043A\u043E\u0439. \u0421\u043B\u043E\u0436\u043D\u044B\u0435 \u0444\u043E\u0440\u043C\u044B \u0438 \u0431\u043E\u0440\u043E\u0434\u0443 \u0437\u0430\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u044E \u0441 \u0437\u0430\u043F\u0430\u0441\u043E\u043C."},{q:"\u041D\u0443\u0436\u043D\u0430 \u043B\u0438 \u043F\u0440\u0435\u0434\u043E\u043F\u043B\u0430\u0442\u0430?",a:"\u041D\u0435\u0442. \u0414\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E \u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443 \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438\u043B\u0438 \u043D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0432 Telegram \u2014 \u044F \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0443 \u0432\u0440\u0435\u043C\u044F."},{q:"\u041C\u043E\u0436\u043D\u043E \u043F\u0440\u0438\u0439\u0442\u0438 \u0441 \u0440\u0435\u0444\u0435\u0440\u0435\u043D\u0441\u043E\u043C?",a:"\u0414\u0430, \u044D\u0442\u043E \u043B\u0443\u0447\u0448\u0438\u0439 \u0441\u0442\u0430\u0440\u0442. \u041F\u043E\u043A\u0430\u0436\u0438 \u0444\u043E\u0442\u043E \u2014 \u0432\u043C\u0435\u0441\u0442\u0435 \u0440\u0435\u0448\u0438\u043C, \u0447\u0442\u043E \u043F\u043E\u0434\u043E\u0439\u0434\u0451\u0442 \u043F\u043E\u0434 \u0444\u043E\u0440\u043C\u0443 \u043B\u0438\u0446\u0430 \u0438 \u0442\u0432\u043E\u0438 \u0432\u043E\u043B\u043E\u0441\u044B."},{q:"\u041A\u0430\u043A \u043F\u0435\u0440\u0435\u043D\u0435\u0441\u0442\u0438 \u0438\u043B\u0438 \u043E\u0442\u043C\u0435\u043D\u0438\u0442\u044C \u0437\u0430\u043F\u0438\u0441\u044C?",a:"\u041D\u0430\u043F\u0438\u0448\u0438 \u0432 Telegram \u0437\u0430\u0440\u0430\u043D\u0435\u0435 \u2014 \u043F\u0435\u0440\u0435\u043D\u0435\u0441\u0451\u043C \u043D\u0430 \u0443\u0434\u043E\u0431\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F \u0431\u0435\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C."},{q:"\u041A\u0430\u043A \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434 \u043D\u0430 \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0443\u044E \u0441\u0442\u0440\u0438\u0436\u043A\u0443?",a:`\u0421\u043E\u0442\u0440\u0438 \u0441\u0435\u0440\u0443\u044E \u043F\u043E\u043B\u043E\u0441\u0443 \u043D\u0430 \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0435 \u2014 \u0432\u043D\u0443\u0442\u0440\u0438 \u043A\u043E\u0434. \u041D\u0430\u0437\u043E\u0432\u0438 \u0435\u0433\u043E \u043F\u0440\u0438 \u0437\u0430\u043F\u0438\u0441\u0438. \u0410\u043A\u0446\u0438\u044F \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442 \u0434\u043B\u044F ${im} \u0447\u0435\u043B\u043E\u0432\u0435\u043A, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043B\u0443\u0447\u0448\u0435 \u043D\u0435 \u043E\u0442\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u0442\u044C.`}];function uP(){let[e,t]=Ba.useState(0),a=Ks(),r=Ba.useRef(null),o=rm(r,{once:!0,margin:"-10% 0px"});return(0,$.jsx)("div",{ref:r,className:"mx-faq",children:lP.map((n,s)=>{let i=e===s;return(0,$.jsxs)(Fa.div,{className:"mx-faq-item"+(i?" open":""),initial:a?!1:{opacity:0,y:24},animate:o?{opacity:1,y:0}:void 0,transition:{type:"spring",stiffness:110,damping:18,delay:s*.07},layout:!a,children:[(0,$.jsxs)("button",{type:"button","aria-expanded":i,"aria-controls":`faq-${s}`,onClick:()=>t(i?null:s),children:[(0,$.jsx)("span",{children:n.q}),(0,$.jsx)(Fa.span,{className:"mx-chev",animate:{rotate:i?180:0},transition:{type:"spring",stiffness:260,damping:20},children:(0,$.jsx)(Qs,{size:20})})]}),(0,$.jsx)(Ul,{initial:!1,children:i&&(0,$.jsx)(Fa.div,{id:`faq-${s}`,role:"region",initial:{height:0,opacity:0},animate:{height:"auto",opacity:1},exit:{height:0,opacity:0},transition:{duration:a?0:.35,ease:[.2,.8,.2,1]},style:{overflow:"hidden"},children:(0,$.jsx)("p",{children:n.a})},"content")})]},n.q)})})}function fP(){let[e,t]=Ba.useState(!1),[a,r]=Ba.useState(!1),o=Ks(),n=Ba.useCallback(()=>{t(!0);try{localStorage.setItem("simen-promo",yf)}catch{}window.dispatchEvent(new CustomEvent("promo:revealed",{detail:{code:yf}}))},[]);return(0,$.jsxs)("div",{className:"mx-promo",children:[(0,$.jsx)("div",{className:"mx-promo-card","data-promo-card":!0,children:(0,$.jsx)(xI,{amount:"FREE",brand:"S1men Sss",tagline:"\u0411\u0430\u0440\u0431\u0435\u0440 \xB7 \u043F\u043E\u0434\u0430\u0440\u043E\u0447\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430",note:`\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u0441\u0442\u0440\u0438\u0436\u043A\u0430 \xB7 \u0442\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F ${im} \u0447\u0435\u043B\u043E\u0432\u0435\u043A`,code:yf,panelLabel:"\u0421\u0442\u0438\u0440\u0430\u0439 \u043C\u043E\u043D\u0435\u0442\u043A\u043E\u0439 \u0437\u0434\u0435\u0441\u044C",hint:"\u0421\u043E\u0442\u0440\u0438 \u0441\u0435\u0440\u0443\u044E \u043F\u043E\u043B\u043E\u0441\u0443 \u2014 \u0432\u043D\u0443\u0442\u0440\u0438 \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434",readyHint:"\u041F\u0440\u043E\u043C\u043E\u043A\u043E\u0434 \u0433\u043E\u0442\u043E\u0432.",copyLabel:"\u0421\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C",copiedLabel:"\u0421\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u043E",revealLabel:"\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434",onReveal:n,onCopy:()=>r(!0),color:"#d2203a",background:"#e4dfd8",style:{width:"100%",height:"100%",borderRadius:28}})}),(0,$.jsx)(Ul,{children:e&&(0,$.jsxs)(Fa.div,{className:"mx-promo-win",initial:o?!1:{opacity:0,y:24,scale:.96},animate:{opacity:1,y:0,scale:1},exit:{opacity:0},transition:{type:"spring",stiffness:160,damping:16},children:[(0,$.jsx)("span",{className:"mx-win-ic",children:(0,$.jsx)(Zs,{size:22})}),(0,$.jsxs)("div",{children:[(0,$.jsxs)("b",{children:[(0,$.jsx)(Ir,{size:15,style:{verticalAlign:"-2px"}})," \u0422\u0435\u0431\u0435 \u0432\u044B\u043F\u0430\u043B\u0430 \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u0441\u0442\u0440\u0438\u0436\u043A\u0430!"]}),(0,$.jsxs)("p",{children:["\u041F\u0440\u043E\u043C\u043E\u043A\u043E\u0434 ",(0,$.jsx)("code",{children:yf}),a?" \u0441\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D.":"."," \u041E\u043D \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442 \u0434\u043B\u044F ",im," \u0447\u0435\u043B\u043E\u0432\u0435\u043A \u2014 \u043D\u0430\u0437\u043E\u0432\u0438 \u0435\u0433\u043E \u043F\u0440\u0438 \u0437\u0430\u043F\u0438\u0441\u0438. \u041C\u044B \u0443\u0436\u0435 \u043F\u043E\u0434\u0441\u0442\u0430\u0432\u0438\u043B\u0438 \u043A\u043E\u0434 \u0432 \u0444\u043E\u0440\u043C\u0443 \u0437\u0430\u044F\u0432\u043A\u0438."]})]}),(0,$.jsx)("a",{className:"btn",href:"#booking",children:"\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F \u043F\u043E \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434\u0443"})]})})]})}function lm(e,t){let a=document.getElementById(e);a&&(0,LI.createRoot)(a).render(t)}lm("react-steps",(0,$.jsx)(iP,{}));lm("react-promo",(0,$.jsx)(fP,{}));lm("react-faq",(0,$.jsx)(uP,{}));})();
+`}),(0,H.jsxs)(H.Fragment,{children:[(0,H.jsxs)("div",{ref:ct,role:"group","aria-label":[e,t,"gift card"].filter(Boolean).join(" "),style:{position:"absolute",left:oi,top:Fn,width:wf,height:kf,borderRadius:O(Gk),background:m,color:p,userSelect:"none",WebkitUserSelect:"none",cursor:"none",touchAction:"pan-y",boxShadow:`inset 0 ${O(1)} 0 ${xe(si,.32)}, inset 0 0 0 ${O(1)} ${xe(si,.1)}, 0 ${O(2)} ${O(3)} ${xe(Mf,.45)}, 0 ${O(13)} ${O(20)} ${O(-6)} ${xe(Mf,.6)}, 0 ${O(34)} ${O(56)} ${O(-12)} ${xe(Mf,.36)}`},children:[(0,H.jsxs)("div",{style:{position:"absolute",left:O(35),top:O(32),right:O(170),lineHeight:1.15,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"},children:[(0,H.jsx)("div",{style:{fontSize:Pr(16.5),fontWeight:650,letterSpacing:"-0.005em"},children:t}),(0,H.jsx)("div",{style:{fontSize:Pr(14),fontWeight:400,color:ym,marginTop:O(1.5)},children:a})]}),(0,H.jsx)(ao,{"aria-hidden":"true",color:p,strokeWidth:1.4,style:{position:"absolute",right:O(37),top:O(27),width:O(76),height:O(76)}}),(0,H.jsx)("div",{style:{position:"absolute",left:O(26),top:O(78),fontFamily:B,fontStretch:"condensed",fontWeight:900,fontSize:O(140),lineHeight:1,letterSpacing:"-0.032em",whiteSpace:"nowrap"},children:e}),(0,H.jsx)("div",{style:{position:"absolute",left:O(35),right:O(35),top:O(238),fontSize:Pr(14),lineHeight:1.3,color:ym,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"},children:r}),(0,H.jsxs)("div",{ref:oo,className:`lsk${dt}-panel`,role:jt?"group":"button",tabIndex:jt?-1:0,"aria-label":jt?"Gift card code":f,onKeyDown:PI,onClick:x=>{var W,_;x.detail===0&&!jt&&((_=(W=St.current).doReveal)==null||_.call(W,!0))},style:{position:"absolute",left:O(Pn),top:O(ti),width:O(xf),height:O(gf),borderRadius:O(jk),background:v,touchAction:"none",overflow:"hidden"},children:[(0,H.jsx)("div",{"aria-hidden":!jt,style:{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",paddingTop:O(4),fontFamily:Ee,fontWeight:600,fontSize:Pr(31,13),letterSpacing:"0.07em",textIndent:"0.07em",color:P,whiteSpace:"nowrap"},children:o}),(0,H.jsx)("canvas",{ref:Sr,"aria-hidden":"true",style:{position:"absolute",inset:0,width:"100%",height:"100%",display:"block"}})]})]}),(0,H.jsx)("canvas",{ref:If,"aria-hidden":"true",style:{position:"absolute",left:0,top:0,width:wr,height:kr,pointerEvents:"none"}}),(0,H.jsx)("div",{ref:fm,"aria-hidden":"true",style:{position:"absolute",left:0,top:0,width:O(om),height:O(om),pointerEvents:"none",opacity:0,visibility:"hidden",willChange:"transform, opacity",filter:`drop-shadow(${O(1.5)} ${O(3)} ${O(2.5)} ${xe(ce(Tr,Ct,.75),.42)})`},children:(0,H.jsxs)("svg",{viewBox:"0 0 52 52",width:"100%",height:"100%",style:{display:"block"},children:[(0,H.jsxs)("defs",{children:[(0,H.jsxs)("radialGradient",{id:`lsk${dt}f`,cx:"0.36",cy:"0.3",r:"0.8",children:[(0,H.jsx)("stop",{offset:"0",stopColor:xm}),(0,H.jsx)("stop",{offset:"0.55",stopColor:TI}),(0,H.jsx)("stop",{offset:"1",stopColor:MI})]}),(0,H.jsxs)("linearGradient",{id:`lsk${dt}r`,x1:"0.2",y1:"0",x2:"0.8",y2:"1",children:[(0,H.jsx)("stop",{offset:"0",stopColor:AI}),(0,H.jsx)("stop",{offset:"1",stopColor:Tf})]})]}),(0,H.jsx)("circle",{cx:"26",cy:"26",r:"25.5",fill:Tf}),(0,H.jsx)("circle",{cx:"26",cy:"26",r:"24",fill:`url(#lsk${dt}r)`}),(0,H.jsx)("circle",{cx:"26",cy:"26",r:"22.8",fill:`url(#lsk${dt}f)`}),(0,H.jsx)("circle",{cx:"26",cy:"26",r:"22.8",fill:"none",stroke:Tf,strokeOpacity:"0.5",strokeWidth:"0.8"}),(0,H.jsx)("path",{d:"M22.6 22.4 L27.4 18.8 L27.4 33.4",fill:"none",stroke:xm,strokeOpacity:"0.7",strokeWidth:"2.6",strokeLinecap:"round",strokeLinejoin:"round",transform:"translate(0.6 0.7)"}),(0,H.jsx)("path",{d:"M22.6 22.4 L27.4 18.8 L27.4 33.4",fill:"none",stroke:DI,strokeWidth:"2.6",strokeLinecap:"round",strokeLinejoin:"round"})]})}),(0,H.jsx)("div",{ref:dm,"aria-hidden":jt,style:{position:"absolute",left:16,right:16,top:Fn+$k*Ne,transform:"translateY(-50%)",textAlign:"center",fontSize:Pr(19),lineHeight:1.3,color:Lm,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis",pointerEvents:"none"},children:s}),(0,H.jsxs)("div",{ref:cm,style:{position:"absolute",left:oi+wf/2,top:Fn+Kk*Ne,transform:"translate(-50%, -50%) translateY(5px)",display:"flex",alignItems:"center",gap:O(20),whiteSpace:"nowrap",opacity:0,visibility:"hidden"},children:[(0,H.jsx)("span",{"aria-hidden":"true",style:{fontSize:Pr(18),color:Lm},children:i}),(0,H.jsxs)("button",{ref:Cf,type:"button",className:`lsk${dt}-btn`,tabIndex:jt?0:-1,"aria-hidden":!jt,onClick:kI,style:{position:"relative",height:Math.max(32,48*Ne),padding:`0 ${O(22)}`,minWidth:O(130),border:0,borderRadius:999,background:P,color:"#ffffff",font:"inherit",fontSize:Pr(16),fontWeight:600,cursor:"pointer",overflow:"hidden"},children:[(0,H.jsx)("span",{ref:pm,"aria-hidden":Rn,style:{display:"block"},children:l}),(0,H.jsxs)("span",{ref:mm,"aria-hidden":!Rn,style:{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",gap:O(7),opacity:0,color:xe(ce(Et(w),Dn,.8))},children:[(0,H.jsx)("svg",{"aria-hidden":"true",viewBox:"0 0 16 16",width:O(14),height:O(14),style:{flex:"none"},children:(0,H.jsx)("path",{d:"M2.5 8.6 L6.2 12.2 L13.5 4.4",fill:"none",stroke:"currentColor",strokeWidth:"2.2",strokeLinecap:"round",strokeLinejoin:"round"})}),u]})]})]}),(0,H.jsxs)("div",{className:`lsk${dt}-sr`,"aria-live":"polite",children:[jt?`${i} ${o}`:"",Rn?` ${u}.`:""]})]})]})}var $=b(ta()),yf="S1MEN-FREE-2",im=2,sP=[{icon:Js,title:"\u0420\u0430\u0437\u0433\u043E\u0432\u043E\u0440",text:"\u041E\u0431\u0441\u0443\u0436\u0434\u0430\u0435\u043C \u043F\u0440\u0438\u0447\u0435\u0441\u043A\u0443 \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u043C: \u0440\u0435\u0444\u0435\u0440\u0435\u043D\u0441\u044B, \u043E\u0431\u0440\u0430\u0437 \u0436\u0438\u0437\u043D\u0438, \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043D\u0430 \u0443\u043A\u043B\u0430\u0434\u043A\u0443."},{icon:ei,title:"\u041F\u043E\u0434\u0433\u043E\u0442\u043E\u0432\u043A\u0430",text:"\u041C\u043E\u044E \u0438 \u043F\u043E\u0434\u0433\u043E\u0442\u0430\u0432\u043B\u0438\u0432\u0430\u044E \u0432\u043E\u043B\u043E\u0441\u044B, \u0441\u043C\u043E\u0442\u0440\u044E \u043D\u0430 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0443 \u0438 \u043F\u0440\u043E\u043F\u043E\u0440\u0446\u0438\u0438 \u043B\u0438\u0446\u0430."},{icon:ao,title:"\u0421\u0442\u0440\u0438\u0436\u043A\u0430",text:"\u0424\u043E\u0440\u043C\u0430 \u043F\u043E\u0434 \u043B\u0438\u0446\u043E: \u0444\u0435\u0439\u0434, \u044D\u0434\u0433\u0430\u0440 \u043A\u0430\u0442, \u043A\u0440\u043E\u043F, \u043E\u0431\u044A\u0451\u043C. \u0427\u0451\u0442\u043A\u043E \u0438 \u0431\u0435\u0437 \u0441\u043F\u0435\u0448\u043A\u0438."},{icon:Ys,title:"\u0423\u043A\u043B\u0430\u0434\u043A\u0430",text:"\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u044E, \u043A\u0430\u043A \u043F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u044C \u0443\u043A\u043B\u0430\u0434\u043A\u0443 \u0434\u043E\u043C\u0430 \u0437\u0430 \u0442\u0440\u0438 \u043C\u0438\u043D\u0443\u0442\u044B."}];function iP(){let e=Ks(),t=Ba.useRef(null),{scrollYProgress:a}=tm({target:t,offset:["start 75%","end 55%"]}),r=am(a,{stiffness:120,damping:28,mass:.4});return(0,$.jsxs)("div",{ref:t,className:"mx-steps",children:[(0,$.jsx)("div",{className:"mx-line","aria-hidden":"true",children:(0,$.jsx)(Fa.i,{style:{scaleY:e?1:r}})}),sP.map((o,n)=>{let s=o.icon;return(0,$.jsxs)(Fa.article,{className:"mx-step",initial:e?!1:{opacity:0,x:n%2?48:-48,filter:"blur(8px)"},whileInView:{opacity:1,x:0,filter:"blur(0px)"},viewport:{once:!0,margin:"-12% 0px"},transition:{type:"spring",stiffness:90,damping:16,delay:.05},whileHover:e?void 0:{y:-6,scale:1.015},children:[(0,$.jsx)(Fa.span,{className:"mx-badge",initial:e?!1:{scale:0,rotate:-90},whileInView:{scale:1,rotate:0},viewport:{once:!0,margin:"-12% 0px"},transition:{type:"spring",stiffness:260,damping:14,delay:.2},children:(0,$.jsx)(s,{size:22,strokeWidth:1.8})}),(0,$.jsxs)("div",{children:[(0,$.jsxs)("small",{children:["\u0428\u0430\u0433 ",String(n+1).padStart(2,"0")]}),(0,$.jsx)("h3",{children:o.title}),(0,$.jsx)("p",{children:o.text})]})]},o.title)})]})}var lP=[{q:"\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u0438\u0442\u0441\u044F \u0441\u0442\u0440\u0438\u0436\u043A\u0430?",a:"\u041E\u0431\u044B\u0447\u043D\u043E \u043E\u0442 60 \u0434\u043E 90 \u043C\u0438\u043D\u0443\u0442 \u0432\u043C\u0435\u0441\u0442\u0435 \u0441 \u0440\u0430\u0437\u0433\u043E\u0432\u043E\u0440\u043E\u043C, \u043C\u044B\u0442\u044C\u0451\u043C \u0438 \u0443\u043A\u043B\u0430\u0434\u043A\u043E\u0439. \u0421\u043B\u043E\u0436\u043D\u044B\u0435 \u0444\u043E\u0440\u043C\u044B \u0438 \u0431\u043E\u0440\u043E\u0434\u0443 \u0437\u0430\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u044E \u0441 \u0437\u0430\u043F\u0430\u0441\u043E\u043C."},{q:"\u041D\u0443\u0436\u043D\u0430 \u043B\u0438 \u043F\u0440\u0435\u0434\u043E\u043F\u043B\u0430\u0442\u0430?",a:"\u041D\u0435\u0442. \u0414\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E \u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443 \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438\u043B\u0438 \u043D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0432 Telegram \u2014 \u044F \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0443 \u0432\u0440\u0435\u043C\u044F."},{q:"\u041C\u043E\u0436\u043D\u043E \u043F\u0440\u0438\u0439\u0442\u0438 \u0441 \u0440\u0435\u0444\u0435\u0440\u0435\u043D\u0441\u043E\u043C?",a:"\u0414\u0430, \u044D\u0442\u043E \u043B\u0443\u0447\u0448\u0438\u0439 \u0441\u0442\u0430\u0440\u0442. \u041F\u043E\u043A\u0430\u0436\u0438 \u0444\u043E\u0442\u043E \u2014 \u0432\u043C\u0435\u0441\u0442\u0435 \u0440\u0435\u0448\u0438\u043C, \u0447\u0442\u043E \u043F\u043E\u0434\u043E\u0439\u0434\u0451\u0442 \u043F\u043E\u0434 \u0444\u043E\u0440\u043C\u0443 \u043B\u0438\u0446\u0430 \u0438 \u0442\u0432\u043E\u0438 \u0432\u043E\u043B\u043E\u0441\u044B."},{q:"\u041A\u0430\u043A \u043F\u0435\u0440\u0435\u043D\u0435\u0441\u0442\u0438 \u0438\u043B\u0438 \u043E\u0442\u043C\u0435\u043D\u0438\u0442\u044C \u0437\u0430\u043F\u0438\u0441\u044C?",a:"\u041D\u0430\u043F\u0438\u0448\u0438 \u0432 Telegram \u0437\u0430\u0440\u0430\u043D\u0435\u0435 \u2014 \u043F\u0435\u0440\u0435\u043D\u0435\u0441\u0451\u043C \u043D\u0430 \u0443\u0434\u043E\u0431\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F \u0431\u0435\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C."},{q:"\u041A\u0430\u043A \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434 \u043D\u0430 \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0443\u044E \u0441\u0442\u0440\u0438\u0436\u043A\u0443?",a:`\u0421\u043E\u0442\u0440\u0438 \u0441\u0435\u0440\u0443\u044E \u043F\u043E\u043B\u043E\u0441\u0443 \u043D\u0430 \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0435 \u2014 \u0432\u043D\u0443\u0442\u0440\u0438 \u043A\u043E\u0434. \u041D\u0430\u0437\u043E\u0432\u0438 \u0435\u0433\u043E \u043F\u0440\u0438 \u0437\u0430\u043F\u0438\u0441\u0438. \u0410\u043A\u0446\u0438\u044F \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442 \u0434\u043B\u044F ${im} \u0447\u0435\u043B\u043E\u0432\u0435\u043A, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043B\u0443\u0447\u0448\u0435 \u043D\u0435 \u043E\u0442\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u0442\u044C.`}];function uP(){let[e,t]=Ba.useState(0),a=Ks(),r=Ba.useRef(null),o=rm(r,{once:!0,margin:"-10% 0px"});return(0,$.jsx)("div",{ref:r,className:"mx-faq",children:lP.map((n,s)=>{let i=e===s;return(0,$.jsxs)(Fa.div,{className:"mx-faq-item"+(i?" open":""),initial:a?!1:{opacity:0,y:24},animate:o?{opacity:1,y:0}:void 0,transition:{type:"spring",stiffness:110,damping:18,delay:s*.07},layout:!a,children:[(0,$.jsxs)("button",{type:"button","aria-expanded":i,"aria-controls":`faq-${s}`,onClick:()=>t(i?null:s),children:[(0,$.jsx)("span",{children:n.q}),(0,$.jsx)(Fa.span,{className:"mx-chev",animate:{rotate:i?180:0},transition:{type:"spring",stiffness:260,damping:20},children:(0,$.jsx)(Qs,{size:20})})]}),(0,$.jsx)(Ul,{initial:!1,children:i&&(0,$.jsx)(Fa.div,{id:`faq-${s}`,role:"region",initial:{height:0,opacity:0},animate:{height:"auto",opacity:1},exit:{height:0,opacity:0},transition:{duration:a?0:.35,ease:[.2,.8,.2,1]},style:{overflow:"hidden"},children:(0,$.jsx)("p",{children:n.a})},"content")})]},n.q)})})}function fP(){let[e,t]=Ba.useState(!1),[a,r]=Ba.useState(!1),o=Ks(),n=Ba.useCallback(()=>{t(!0);try{localStorage.setItem("simen-promo",yf)}catch{}window.dispatchEvent(new CustomEvent("promo:revealed",{detail:{code:yf}}))},[]);return(0,$.jsxs)("div",{className:"mx-promo",children:[(0,$.jsx)("div",{className:"mx-promo-card","data-promo-card":!0,children:(0,$.jsx)(xI,{amount:"FREE",brand:"SIM1NSSS",tagline:"\u0411\u0430\u0440\u0431\u0435\u0440 \xB7 \u043F\u043E\u0434\u0430\u0440\u043E\u0447\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430",note:`\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u0441\u0442\u0440\u0438\u0436\u043A\u0430 \xB7 \u0442\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F ${im} \u0447\u0435\u043B\u043E\u0432\u0435\u043A`,code:yf,panelLabel:"\u0421\u0442\u0438\u0440\u0430\u0439 \u043C\u043E\u043D\u0435\u0442\u043A\u043E\u0439 \u0437\u0434\u0435\u0441\u044C",hint:"\u0421\u043E\u0442\u0440\u0438 \u0441\u0435\u0440\u0443\u044E \u043F\u043E\u043B\u043E\u0441\u0443 \u2014 \u0432\u043D\u0443\u0442\u0440\u0438 \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434",readyHint:"\u041F\u0440\u043E\u043C\u043E\u043A\u043E\u0434 \u0433\u043E\u0442\u043E\u0432.",copyLabel:"\u0421\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C",copiedLabel:"\u0421\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u043E",revealLabel:"\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434",onReveal:n,onCopy:()=>r(!0),color:"#d2203a",background:"#e4dfd8",style:{width:"100%",height:"100%",borderRadius:28}})}),(0,$.jsx)(Ul,{children:e&&(0,$.jsxs)(Fa.div,{className:"mx-promo-win",initial:o?!1:{opacity:0,y:24,scale:.96},animate:{opacity:1,y:0,scale:1},exit:{opacity:0},transition:{type:"spring",stiffness:160,damping:16},children:[(0,$.jsx)("span",{className:"mx-win-ic",children:(0,$.jsx)(Zs,{size:22})}),(0,$.jsxs)("div",{children:[(0,$.jsxs)("b",{children:[(0,$.jsx)(Ir,{size:15,style:{verticalAlign:"-2px"}})," \u0422\u0435\u0431\u0435 \u0432\u044B\u043F\u0430\u043B\u0430 \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u0430\u044F \u0441\u0442\u0440\u0438\u0436\u043A\u0430!"]}),(0,$.jsxs)("p",{children:["\u041F\u0440\u043E\u043C\u043E\u043A\u043E\u0434 ",(0,$.jsx)("code",{children:yf}),a?" \u0441\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D.":"."," \u041E\u043D \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442 \u0434\u043B\u044F ",im," \u0447\u0435\u043B\u043E\u0432\u0435\u043A \u2014 \u043D\u0430\u0437\u043E\u0432\u0438 \u0435\u0433\u043E \u043F\u0440\u0438 \u0437\u0430\u043F\u0438\u0441\u0438. \u041C\u044B \u0443\u0436\u0435 \u043F\u043E\u0434\u0441\u0442\u0430\u0432\u0438\u043B\u0438 \u043A\u043E\u0434 \u0432 \u0444\u043E\u0440\u043C\u0443 \u0437\u0430\u044F\u0432\u043A\u0438."]})]}),(0,$.jsx)("a",{className:"btn",href:"#booking",children:"\u0417\u0430\u043F\u0438\u0441\u0430\u0442\u044C\u0441\u044F \u043F\u043E \u043F\u0440\u043E\u043C\u043E\u043A\u043E\u0434\u0443"})]})})]})}function lm(e,t){let a=document.getElementById(e);a&&(0,LI.createRoot)(a).render(t)}lm("react-steps",(0,$.jsx)(iP,{}));lm("react-promo",(0,$.jsx)(fP,{}));lm("react-faq",(0,$.jsx)(uP,{}));})();
 /*! Bundled license information:
 
 react/cjs/react.production.min.js:
@@ -1502,6 +1549,21 @@ lucide-react/dist/esm/lucide-react.js:
    *)
 */
 
+</script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import { firebaseConfig } from "./firebase-config.js";
+const note=document.getElementById("auth-note"),button=document.getElementById("google-signin"),logout=document.getElementById("auth-logout");
+const configReady=firebaseConfig&&Object.values(firebaseConfig).every(v=>typeof v==="string"&&v.trim()&&!v.includes("PASTE_"));
+if(!configReady){button?.addEventListener("click",()=>{note.textContent="Google-вход ещё не подключён: добавь настройки Firebase в firebase-config.js и включи Google provider."});}
+else{try{
+const app=initializeApp(firebaseConfig),auth=getAuth(app),provider=new GoogleAuthProvider();provider.setCustomParameters({prompt:"select_account"});
+button?.addEventListener("click",async()=>{button.disabled=true;note.textContent="Открываю безопасный вход Google…";try{await signInWithPopup(auth,provider)}catch(error){note.textContent=error.code==="auth/popup-closed-by-user"?"Окно входа закрыто.":"Не удалось войти. Проверь Google provider и разрешённый домен Firebase."}finally{button.disabled=false}});
+logout?.addEventListener("click",()=>signOut(auth));
+onAuthStateChanged(auth,user=>{window.SIM1NSSS_AUTH_USER=user?{uid:user.uid,email:user.email,name:user.displayName,photoURL:user.photoURL}:null;document.body.classList.toggle("google-authenticated",!!user);
+if(user){document.getElementById("auth-name").textContent=user.displayName||user.email;const avatar=document.getElementById("auth-avatar");if(user.photoURL){avatar.src=user.photoURL;avatar.style.display="block"}else avatar.style.display="none";note.textContent="Ты вошёл через Google. Теперь можно выбрать время."}else note.textContent="Безопасный вход через Google."});
+}catch(error){note.textContent="Firebase не удалось запустить. Проверь firebase-config.js."}}
 </script>
 </body>
 </html>

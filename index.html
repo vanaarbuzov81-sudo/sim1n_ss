@@ -424,6 +424,15 @@ body.ptrun .content{transform:scale(.975)}
 .sheet{transition:transform 1s cubic-bezier(.2,.9,.2,1),opacity .6s}
 #lb{transition:opacity .6s}
 #lb img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+
+/* INTRO FIRST: show cinematic intro before loader and page content */
+#intro{display:flex!important;position:fixed!important;inset:0!important;z-index:99999!important;opacity:1;visibility:visible;pointer-events:auto}
+#intro.out{pointer-events:none}
+#loader{display:none}
+html.locked,html.locked body{height:100%;overflow:hidden!important}
+.content{visibility:hidden}
+body.ready .content{visibility:visible}
+
 </style>
 </head>
 <body>
@@ -1127,9 +1136,13 @@ var PHOTO_SRC="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBA
     setTimeout(finish,8000);
   }
   document.getElementById('intro-continue').addEventListener('click',function(){
+    if(intro.classList.contains('out')) return;
     startLoader();
     intro.classList.add('out');
-    setTimeout(function(){intro.style.display='none'},900);
+    setTimeout(function(){
+      intro.style.display='none';
+      intro.style.visibility='hidden';
+    },900);
   });
 
   /* ================= ПРОКРУТКА, ОТЗЫВЫ, ПАРАЛЛАКС ================= */

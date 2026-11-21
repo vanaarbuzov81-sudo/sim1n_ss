@@ -532,17 +532,71 @@ html.intro-open,html.intro-open body{overflow:hidden}
 body.google-authenticated .auth-user{display:flex}body.google-authenticated .google-btn{display:none}body.google-authenticated .auth-panel .auth-help{display:none}
 @media(max-width:760px){.booking-gate{grid-template-columns:1fr}.tool-orbit{min-height:280px}.tool-orbit:after{width:250px;height:250px}.tool-orbit:before{width:180px;height:180px}.auth-panel{text-align:center}}
 
+
+/* INTRO — photographic portrait layout matching supplied reference */
+#intro{display:flex;align-items:stretch;justify-content:flex-end;flex-direction:column;isolation:isolate;overflow:hidden;background:#111!important;color:#fff;padding:0}
+#intro #introImg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 34%;z-index:-2;filter:brightness(.76) saturate(.88);animation:introPhoto 18s ease-in-out infinite alternate}
+#intro .intro-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(5,5,8,.54) 0%,rgba(5,5,8,.05) 26%,rgba(5,5,8,.20) 47%,rgba(5,5,8,.91) 100%),linear-gradient(90deg,rgba(5,5,8,.28),transparent 65%)}
+#intro .intro-frame{position:absolute;inset:5px;border:1px solid rgba(255,255,255,.38);border-radius:24px;z-index:3;pointer-events:none}
+#intro .intro-top{position:absolute;top:clamp(24px,4vh,40px);left:clamp(26px,4vw,52px);z-index:4;color:#fff;font-size:14px;font-weight:800;letter-spacing:.18em;opacity:1;animation:none}
+#intro .intro-body{position:relative;z-index:2;width:100%;max-width:900px;margin:0 auto;padding:0 clamp(24px,4vw,54px) clamp(30px,7vh,58px);text-align:left}
+#intro .intro-kicker{display:block;color:#ff9eac;font-size:clamp(10px,1.35vw,13px);font-weight:800;letter-spacing:.19em;opacity:1;animation:introUp .8s .2s both}
+#intro .intro-title{display:flex;flex-direction:column;gap:0;margin:14px 0 18px;font-family:var(--head);font-size:clamp(76px,16vw,150px);line-height:.82;letter-spacing:-.075em;font-weight:950;opacity:1}
+#intro .intro-title span{display:block;opacity:1;animation:introUp .9s both}
+#intro .intro-title span:first-child{background:linear-gradient(105deg,#fff 0%,#ffd9df 42%,#ff365e 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+#intro .intro-title span:last-child{-webkit-text-stroke:2px #fff;-webkit-text-fill-color:transparent;animation-delay:.15s}
+#intro .intro-sub{max-width:500px;margin:0;color:#f0edf0;font-size:clamp(14px,1.8vw,17px);line-height:1.45;opacity:1;animation:introUp .8s .35s both}
+#intro .intro-btn{display:flex;width:100%;max-width:560px;justify-content:center;align-items:center;gap:10px;margin-top:28px;padding:17px 28px;border:0;border-radius:999px;background:linear-gradient(100deg,#ff2850,#ff653b);color:#fff;font-size:16px;font-weight:800;opacity:1;animation:introUp .8s .5s both,introPulse 2.4s 2s infinite;box-shadow:0 12px 36px rgba(255,42,69,.35)}
+#intro .intro-btn:hover{transform:translateY(-3px)}
+@keyframes introPhoto{from{transform:scale(1)}to{transform:scale(1.075)}}
+@media(min-width:900px){#intro .intro-body{padding-left:clamp(60px,10vw,150px);padding-bottom:clamp(54px,9vh,100px)}#intro .intro-title{font-size:clamp(120px,13vw,190px)}}
+@media(max-width:600px){#intro .intro-frame{inset:4px;border-radius:20px}#intro #introImg{object-position:center 30%}#intro .intro-body{padding:0 24px 30px}#intro .intro-title{font-size:clamp(74px,17vw,112px)}#intro .intro-btn{max-width:none;margin-top:26px;padding:17px 20px}}
+@media(prefers-reduced-motion:reduce){#intro #introImg{animation:none}}
+
+/* Give booking a full, unclipped layout; keep decorative canvas from crossing content */
+#gl{display:none!important}
+.bg .word{opacity:.25}
+.content{position:relative;z-index:2}
+#booking .wrap.shiftR{width:100%;max-width:1280px;padding-left:clamp(20px,4vw,52px);padding-right:clamp(20px,4vw,52px)}
+#booking .booking-gate{width:100%;box-sizing:border-box;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:clamp(28px,5vw,76px);min-height:490px;padding:clamp(28px,4vw,56px);margin:38px 0 30px;overflow:visible}
+#booking .tool-orbit{width:100%;min-width:0;min-height:390px;overflow:visible}
+#booking .tool-orbit:before{width:min(290px,72%);height:auto;aspect-ratio:1}
+#booking .tool-orbit:after{width:min(390px,96%);height:auto;aspect-ratio:1}
+#booking .auth-panel{min-width:0;width:100%;max-width:480px}
+#booking .auth-panel h3{font-size:clamp(26px,3vw,38px);line-height:1.12}
+#booking .auth-panel p{font-size:16px;line-height:1.55}
+#booking .auth-note{font-size:13px;line-height:1.5}
+@media(max-width:900px){
+ #booking .wrap.shiftR{padding-inline:20px}
+ #booking .booking-gate{grid-template-columns:1fr;gap:24px;min-height:0;padding:26px 22px}
+ #booking .tool-orbit{min-height:320px}
+ #booking .tool-orbit:after{width:min(310px,90%)}
+ #booking .tool-orbit:before{width:min(220px,65%)}
+ #booking .auth-panel{max-width:none;text-align:center}
+}
+@media(max-width:480px){#booking .tool-orbit{min-height:270px}#booking .booking-gate{padding:20px 16px}}
+
+/* Premium gold-plated feature emblems */
+.feat article{grid-template-columns:76px 1fr;gap:22px;align-items:center;padding:30px 0}
+.feat .feat-icon{width:58px;height:58px;display:grid;place-items:center;border-radius:19px;position:relative;color:#e8c48b;background:linear-gradient(145deg,#27221b,#111116 68%);border:1px solid rgba(220,181,119,.58);box-shadow:inset 0 1px 0 rgba(255,255,255,.17),0 10px 30px rgba(0,0,0,.32),0 0 24px rgba(194,147,84,.09)}
+.feat .feat-icon:before{content:"";position:absolute;inset:4px;border:1px solid rgba(220,181,119,.2);border-radius:14px;pointer-events:none}
+.feat .feat-icon svg{width:31px;height:31px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 5px rgba(224,183,119,.28))}
+.feat article:hover .feat-icon{transform:translateY(-3px);border-color:#f2d39c;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 16px 36px rgba(0,0,0,.4),0 0 28px rgba(194,147,84,.16)}
+.feat .feat-icon{transition:transform .3s,border-color .3s,box-shadow .3s}
+@media(max-width:600px){.feat article{grid-template-columns:64px 1fr;gap:16px}.feat .feat-icon{width:52px;height:52px;border-radius:17px}}
+
 </style>
 </head>
 <body>
-<div id="intro" role="dialog" aria-modal="true" aria-label="Барбер">
-  <div class="intro-glow intro-glow-a"></div><div class="intro-glow intro-glow-b"></div>
+<div id="intro" role="dialog" aria-modal="true" aria-label="SIM1NSSS barber intro">
+  <img id="introImg" alt="" aria-hidden="true">
+  <div class="intro-shade"></div>
   <div class="intro-frame"></div>
-  <div class="intro-top"><span class="mini"></span>SIM1NSSS</div>
+  <div class="intro-top">SIM1N SSS</div>
   <div class="intro-body">
-    <p class="intro-kicker">SIM1NSSS · BARBER STUDIO</p>
-    <h1 class="intro-title">Барбер</h1>
-    <p class="intro-sub">Твой стиль. Твоя форма. Твой барбер.</p>
+    <p class="intro-kicker">БАРБЕР · ЭДГАР КАТ · ХАЙФЭШН</p>
+    <h1 class="intro-title"><span>SIM1N</span><span>SSS</span></h1>
+    <p class="intro-sub">Образ, который строится под тебя. Обсуждаем причёски вместе с клиентом.</p>
     <button type="button" id="introGo" class="btn intro-btn">Продолжить <span aria-hidden="true">→</span></button>
   </div>
 </div>
@@ -622,10 +676,10 @@ body.google-authenticated .auth-user{display:flex}body.google-authenticated .goo
     <h2 class="rv">Не стрижка — образ</h2>
     <p class="lead rv">Я смотрю на форму лица, структуру волос и твой стиль жизни. Из этого собирается стрижка, которая выглядит дорого и держится неделями.</p>
     <div class="feat">
-      <article class="rv"><i>3</i><div><h3>Года опыта</h3><p>Три года в барбершопе — от классики до сложных переходов и авторских форм.</p></div></article>
-      <article class="rv"><i>✂</i><div><h3>Современные формы</h3><p>Эдгар кат, фейд, кроп, текстура. Чёткие линии и живой объём — чисто, жёстко, актуально.</p></div></article>
-      <article class="rv"><i>≈</i><div><h3>Обсуждаем вместе</h3><p>Прическу выбираем вместе с клиентом: референсы, образ жизни, время на укладку.</p></div></article>
-      <article class="rv"><i>◆</i><div><h3>Хайфэшн</h3><p>Индивидуальный образ под форму лица: подбираем пропорции, акценты и стиль.</p></div></article>
+      <article class="rv"><span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5.5 29.2 16l11.6 1.7-8.4 8.2 2 11.5L24 32l-10.4 5.4 2-11.5-8.4-8.2L18.8 16 24 5.5Z"/><path d="m18.5 23.8 3.8 3.8 7.5-8"/></svg></span><div><h3>Года опыта</h3><p>Три года в барбершопе — от классики до сложных переходов и авторских форм.</p></div></article>
+      <article class="rv"><span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="12" cy="35" r="6.5"/><circle cx="12" cy="13" r="6.5"/><path d="m17 17 25 25M17 31 42 6M21 21l-4 4"/></svg></span><div><h3>Современные формы</h3><p>Эдгар кат, фейд, кроп, текстура. Чёткие линии и живой объём — чисто, жёстко, актуально.</p></div></article>
+      <article class="rv"><span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M7 9.5h34v23H22l-9 7v-7H7z"/><path d="M15 18h18M15 24h12"/></svg></span><div><h3>Обсуждаем вместе</h3><p>Прическу выбираем вместе с клиентом: референсы, образ жизни, время на укладку.</p></div></article>
+      <article class="rv"><span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m24 4 18 20-18 20L6 24 24 4Z"/><path d="m24 13 10 11-10 11-10-11 10-11Z"/></svg></span><div><h3>Хайфэшн</h3><p>Индивидуальный образ под форму лица: подбираем пропорции, акценты и стиль.</p></div></article>
     </div>
   </div>
 </section>
@@ -1340,13 +1394,14 @@ var INTRO_FALLBACK="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEB
 
   /* ================= ИНТРО BARBER ================= */
   (function(){
-    var intro=document.getElementById('intro'), go=document.getElementById('introGo');
+    var intro=document.getElementById('intro'), go=document.getElementById('introGo'), img=document.getElementById('introImg');
     if(!intro) return;
     root.classList.add('intro-open');
+    if(img && typeof INTRO_FALLBACK==='string') img.src=INTRO_FALLBACK;
     function close(){
       if(!intro.parentNode) return;
       go.disabled=true;
-      pageGo('Барбер',function(){intro.remove();root.classList.remove('intro-open');window.scrollTo(0,0)});
+      pageGo('SIM1NSSS',function(){intro.remove();root.classList.remove('intro-open');window.scrollTo(0,0)});
     }
     go.addEventListener('click',close);
     setTimeout(function(){try{go.focus({preventScroll:true})}catch(e){}},500);
